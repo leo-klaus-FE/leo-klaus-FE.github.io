@@ -2,7 +2,7 @@
 
 As a test task for [Klaus](https://www.klausapp.com) frontend engineering position, we ask our candidates to build the following small part of the users list using provided static data.
 
-<img src="./reference.png" alt="Reference" width="766" />
+<img src="./reference.png" alt="Reference" width="780" />
 
 Reference design is hosted in [Figma](https://www.figma.com/) (account is needed for Inspect mode):
 https://www.figma.com/file/OXpV1JmHeq9AMZqSWpC3tL/FE-Test-Task?node-id=1%3A528
