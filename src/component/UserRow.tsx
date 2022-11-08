@@ -6,7 +6,7 @@ import { Badge } from './Badge';
 import { Checkbox } from './Checkbox';
 import { User } from './User';
 
-interface UserRowProps {
+export interface UserRowProps {
     id: number,
     name: string;
     email: string;
@@ -15,10 +15,11 @@ interface UserRowProps {
 }
 
 export const UserRow: React.FC<UserRowProps> = ({ id, name, email, avatar, role }) => {
+    console.log(RoleColorMap[role]);
     return <div className="userRow">
         <Checkbox/>
-        <Avatar imageURL={avatar} />
-        <User userName={name} email={email} />
+        <Avatar avatar={avatar} />
+        <User name={name} email={email} />
         <Badge colorScheme={RoleColorMap[role]} role={normaliseRole(role)} />
     </div>
 }

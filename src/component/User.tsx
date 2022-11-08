@@ -1,13 +1,13 @@
 import React from 'react';
 
 interface UserProps {
-    userName: string;
+    name: string;
     email: string;
 }
 
-export const User: React.FC<UserProps> = ({ userName, email }) => {
+export const User: React.FC<UserProps> = ({ name, email }) => {
     return <div className="user">
-        <span>{userName}</span>
+        <span>{name}</span>
         <span className="email">{email}</span>
     </div>
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 
 interface AvatarProps {
-    imageURL: string;
+    avatar: string;
 }
 
-export const Avatar: React.FC<AvatarProps> = ({ imageURL }) => {
-    return <img src={imageURL} alt="Profile picture" className="avatar" />
+export const Avatar: React.FC<AvatarProps> = ({ avatar }) => {
+    return <img src={avatar} alt="Profile picture" className="avatar" />
 }
