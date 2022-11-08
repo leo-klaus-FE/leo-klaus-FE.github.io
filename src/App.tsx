@@ -4,7 +4,8 @@ import { UserTable } from './component/UserTable';
 import { ActionBar } from './component/ActionBar';
 import { ActionButton } from './component/ActionButton';
 import { Search } from './component/SearchBar';
-const { users } = userList
+let { users } = userList
+users = users.slice(0, 20);
 
 export const App = () => {
     return <div className="wrapper">
