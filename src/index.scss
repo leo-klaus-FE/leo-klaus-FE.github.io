@@ -1,4 +1,5 @@
 $shade-white: #FFF;
+$gray-40: #CBD5E0;
 $gray-50: #A0AEC0;
 $gray-60: #718096;
 $gray-90: #1A202C;
@@ -12,27 +13,7 @@ $orange-20: #FEEBC8;
 $orange-80: #91472C;
 $blue-20: #CEF1FD;
 $blue-80: #04546F;
-
 $unit: 8px;
-
-html {
-    font-family: Inter;
-}
-
-.badge {
-    position: absolute;
-    width: 118px;
-    height: 24px;
-    left: 401px;
-    top: 20px;
-    border-radius: 4px;
-}
-
-.avatar {
-    border-radius: calc($unit * 2);
-    height: calc($unit * 4);
-    width: calc($unit * 4);
-}
 
 .pink {
     background-color: $pink-20;
@@ -52,4 +33,48 @@ html {
 .blue {
     background-color: $blue-20;
     color: $blue-80;
+}
+
+html {
+    font-family: Inter;
+    color: $gray-90;
+}
+
+input[type="radio"] {
+    box-sizing: border-box;
+    appearance: none;
+    width: calc($unit * 2);
+    height: calc($unit * 2);
+    border-radius: 3px;
+    border: 1px solid $gray-40;
+}
+
+.badge {
+    position: absolute;
+    width: 118px;
+    height: 24px;
+    left: 401px;
+    top: 20px;
+    border-radius: 4px;
+}
+
+.avatar {
+    border-radius: calc($unit * 2);
+    height: calc($unit * 4);
+    width: calc($unit * 4);
+}
+
+.userRow {
+    display: flex;
+    flex-direction: row;
+    color: $gray-90;
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+
+    .email {
+        color: $gray-60;
+    }
 }
