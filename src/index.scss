@@ -1,5 +1,6 @@
 // Colors
 $shade-white: #FFF;
+$gray-10: #F7FAFC;
 $gray-30: #E2E8F0;
 $gray-40: #CBD5E0;
 $gray-50: #A0AEC0;
@@ -115,6 +116,7 @@ button {
 .userTable {
     display: flex;
     flex-direction: column;
+    background-color: $shade-white
 }
 
 .userRow {
@@ -124,7 +126,8 @@ button {
     position: relative;
     color: $gray-90;
     height: $unit-x8;
-    width: 100%;
+    width: auto;
+    margin: $unit-half 0px;
 }
 
 .user {
@@ -224,4 +227,10 @@ button {
 
 .wrapper {
     margin: 0px $unit-x4;
+}
+
+.select {
+    border-left: 4px solid $brand-50;
+    border-radius: 4px;
+    background: $gray-10;
 }
