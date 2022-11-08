@@ -5,7 +5,6 @@ import { ActionBar } from './component/ActionBar';
 import { ActionButton } from './component/ActionButton';
 import { Search } from './component/SearchBar';
 const { users } = userList
-let example = users.slice(0, 3);
 
 export const App = () => {
     return <div className="wrapper">
@@ -18,7 +17,7 @@ export const App = () => {
         </div>
         <div className="app">
             <ActionBar />
-            <UserTable userList={example} />
+            <UserTable userList={users} />
         </div>
     </div>
 }
