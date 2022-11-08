@@ -116,18 +116,25 @@ button {
 .userTable {
     display: flex;
     flex-direction: column;
-    background-color: $shade-white
+    background-color: $shade-white;
+    box-sizing: border-box;
 }
 
 .userRow {
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: relative;
+    box-sizing: border-box;
     color: $gray-90;
     height: $unit-x8;
-    width: auto;
     margin: $unit-half 0px;
+}
+
+.select {
+    border-left: 4px outset $brand-50;
+    border-radius: 4px;
+    background: $gray-10;
+    position: relative;
 }
 
 .user {
@@ -227,10 +234,4 @@ button {
 
 .wrapper {
     margin: 0px $unit-x4;
-}
-
-.select {
-    border-left: 4px solid $brand-50;
-    border-radius: 4px;
-    background: $gray-10;
 }
