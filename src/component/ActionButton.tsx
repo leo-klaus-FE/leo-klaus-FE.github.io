@@ -7,8 +7,8 @@ interface ActionButtonProps {
 }
 
 export const ActionButton: React.FC<ActionButtonProps> = ({ text, buttonClass }) => {
-    return <button className={buttonClass ? buttonClass : ''}>
+    return <button className={buttonClass ? buttonClass : 'defaultButton'}>
         <Icon type={text} />
-        {text}
+        <span>{text}</span>
     </button>
 }
