@@ -15,7 +15,6 @@ export interface UserRowProps {
 }
 
 export const UserRow: React.FC<UserRowProps> = ({ id, name, email, avatar, role }) => {
-    console.log(RoleColorMap[role]);
     return <div className="userRow">
         <Checkbox/>
         <Avatar avatar={avatar} />

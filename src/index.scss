@@ -40,6 +40,7 @@ $unit: 8px;
 html {
     font-family: Inter;
     color: $gray-90;
+    background: $gray-50
 }
 
 input[type="radio"] {
@@ -65,6 +66,8 @@ button {
 }
 
 .badge {
+    position: absolute;
+    left: calc($unit * 50);
     border-radius: 4px;
     padding: 3px 8px;
     display: flex;
@@ -73,6 +76,8 @@ button {
 }
 
 .avatar {
+    position: relative;
+    left: calc($unit *2);
     border-radius: calc($unit * 2);
     height: calc($unit * 4);
     width: calc($unit * 4);
@@ -87,12 +92,15 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
     color: $gray-90;
     height: calc($unit * 8);
     width: 100%;
 }
 
 .user {
+    position: relative;
+    left: calc($unit *3);
     display: flex;
     flex-direction: column;
 
@@ -105,4 +113,20 @@ button {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-size: calc($unit * 2);
+    line-height: calc($unit * 3);
+}
+
+.app {
+    display: grid;
+    grid-template-columns: 1fr min(120ch, calc(100% - 64px)) 1fr;
+    grid-column-gap: 32px;
+    background-color: $shade-white;
+    border-radius: $unit;
+    height: 100%;
+    padding: calc($unit *2) 0px;
+}
+
+.app>* {
+    grid-column: 2;
 }

@@ -7,8 +7,10 @@ const { users } = userList
 let example = users.slice(0, 3);
 
 export const App = () => {
-    return <div>
-        <ActionBar />
-        <UserTable userList={example} />
+    return <div className="app">
+        <div>
+            <ActionBar />
+            <UserTable userList={example} />
+        </div>
     </div>
 }
