@@ -1,0 +1,55 @@
+$shade-white: #FFF;
+$gray-50: #A0AEC0;
+$gray-60: #718096;
+$gray-90: #1A202C;
+$brand-50: #413EEF;
+$background: #E5E5E5;
+$pink-80: #710C36;
+$pink-20: #FEDDEB;
+$purple-20: #EFE2FE;
+$purple-80: #574195;
+$orange-20: #FEEBC8;
+$orange-80: #91472C;
+$blue-20: #CEF1FD;
+$blue-80: #04546F;
+
+$unit: 8px;
+
+html {
+    font-family: Inter;
+}
+
+.badge {
+    position: absolute;
+    width: 118px;
+    height: 24px;
+    left: 401px;
+    top: 20px;
+    border-radius: 4px;
+}
+
+.avatar {
+    border-radius: calc($unit * 2);
+    height: calc($unit * 4);
+    width: calc($unit * 4);
+}
+
+.pink {
+    background-color: $pink-20;
+    color: $pink-80;
+}
+
+.purple {
+    background-color: $purple-20;
+    color: $purple-80;
+}
+
+.orange {
+    background-color: $orange-20;
+    color: $orange-80;
+}
+
+.blue {
+    background-color: $blue-20;
+    color: $blue-80;
+}
