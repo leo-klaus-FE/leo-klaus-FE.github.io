@@ -12,13 +12,14 @@ export interface UserRowProps {
     email: string;
     avatar: string;
     role: RoleColors;
+    selected: boolean;
 }
 
-export const UserRow: React.FC<UserRowProps> = ({ id, name, email, avatar, role }) => {
-    return <div className="userRow">
-        <Checkbox/>
+export const UserRow: React.FC<UserRowProps> = ({ id, name, email, avatar, role, selected }) => {
+    return <form className="userRow">
+        <Checkbox selected={selected} id={id} />
         <Avatar avatar={avatar} />
         <User name={name} email={email} />
         <Badge colorScheme={RoleColorMap[role]} role={normaliseRole(role)} />
-    </div>
+    </form>
 }

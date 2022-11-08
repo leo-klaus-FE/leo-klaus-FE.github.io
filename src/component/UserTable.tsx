@@ -8,7 +8,8 @@ interface UserTableProps {
 export const UserTable: React.FC<UserTableProps> = ({ userList }) => {
     return <div className="userTable">
         {userList.map((user: UserRowProps) => {
-            return <UserRow {...user} key={user.id} />
+            const rand = Math.random() < 0.5
+            return <UserRow {...user} key={user.id} selected={rand} />
         })}
     </div>
 };
